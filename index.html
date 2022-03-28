@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>POKEDEX</title>
+</head><link rel="icon" href="./img/pokeball.png">
+<body><!--Consume API Pokedex-->
+    
+    <section class="poke-api">
+        
+        <form class="form-poke" onsubmit="searchPokemon(event)">
+            <label for="">Ingrese nombre/numero</label>
+            <input type="text" name="pokemon" placeholder="Buscar" autocomplete="off" style="text-align:center">
+        </form>
+
+        <div id="data-poke-card" class="poke-card">
+            <div id="data-poke-name"><span>Pokedex</span></div>
+            <div id="data-poke-img-container" class="img-container">
+                <img id="data-poke-img" class="poke-img" src="./img/pokeball.png"/>
+            </div>
+            <div id="data-poke-id"></div>
+            <div id="data-poke-types" class="poke-types"></div>
+            <div id="data-poke-stats" class="poke-stats"></div>
+        </div>
+
+    </section>
+
+
+    <div class="audio">
+        <audio src="./img/song.mp3" type="audio/mpeg" autoplay></audio>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
